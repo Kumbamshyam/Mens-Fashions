@@ -1,0 +1,121 @@
+#login-and-singup-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    position: relative;
+    inset: 0 0 0 0;
+    margin: 40px auto;
+    overflow: hidden;
+}
+
+#login-and-singup-main-container{
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #E7F900;
+    border-radius: 10px;
+    
+}
+
+.login-checkbox-container{
+    display: flex;
+    align-items: center;
+
+
+
+    label{
+        opacity: 0.7;
+    }
+}
+
+.error-images{
+    background: rgba(223, 217, 217, 0.397);
+    border-radius: 10px;
+    width: 250px;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+
+    span{
+        color: red;
+    }
+}
+
+.loding-img-container{
+    display: none;
+    position: fixed;
+    z-index: 2;
+    background: rgba(119, 115, 115, 0.377);
+    height: 100vh;
+    width: 100vw;
+
+    #loading{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+    }
+}
+
+
+#login-checkbox{
+    height: 18px;
+    width: 18px;       
+    margin-right: 5px;
+
+    
+    }
+
+.login-and-singup-container{
+    text-transform: capitalize;
+    border-radius: 5px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: rgba(255, 255, 255, 0);
+
+}
+
+#login-form{
+    width: 288px;
+}
+
+.show{
+    display: flex;
+}
+
+#login-and-singup-container-1{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+#login-and-singup-container-2{
+    position: absolute;
+    left: 455px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+    
+#logins-singup-btn{
+    margin: 20px 0 0 129px;
+    letter-spacing: 1px;
+}
+
+#signups-login-btn{
+    margin: 20px 0 0 146px;
+    letter-spacing: 1px;
+}
+
+#new-user-submit-btn{
+    margin: 20px 0 0 0;
+}
+
+#login-submit-btn{
+    margin: 20px 0 0 0;
+}

@@ -1,0 +1,645 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv='refresh' content='30')
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Mens Fashion server
+    style
+      include ../public/css/main-css/style.css
+      include ../public/css/login-and-singup-folder/loginstyle.css
+
+    link(
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css",
+      rel="stylesheet",
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3",
+      crossorigin="anonymous"
+    )
+    link(rel="preconnect", href="https://fonts.googleapis.com")
+    link(rel="preconnect", href="https://fonts.gstatic.com", crossorigin="")
+    link(
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap",
+      rel="stylesheet"
+    )
+//- <----------------------------- End navbar ---------------------------
+
+//- // <----------------------------- Start carousel banner ---------------------------
+//- include navbar.pug
+
+body(style="background: rgba(236, 236, 236, 1)")
+include navbar
+.banner-section
+  #carouselExampleIndicators.carousel-container.carousel.slide(data-bs-ride="carousel")
+    .carousel-indicators
+      button.active(
+        type="button",
+        data-bs-target="#carouselExampleIndicators",
+        data-bs-slide-to="0",
+        aria-current="true",
+        aria-label="Slide 1"
+      )
+      button(
+        type="button",
+        data-bs-target="#carouselExampleIndicators",
+        data-bs-slide-to="1",
+        aria-label="Slide 2")
+      button(
+        type="button",
+        data-bs-target="#carouselExampleIndicators",
+        data-bs-slide-to="2",
+        aria-label="Slide 3")
+    .carousel-inner
+      .carousel-item.active.carousel-item-1
+        img.carousel-imagesd-block.w-100(
+          src="images/cloths images 2.jfif",
+          alt="...")
+      .carousel-item
+        img.carousel-imagesd-block.w-100(
+          src="images/cloths images 2.jfif",
+          alt="...")
+      .carousel-item
+        img.carousel-imagesd-block.w-100(
+          src="images/cloths images 2.jfif",
+          alt="...")
+    .previous-and-next-btn-container      
+      .previous-carousel-btn-container
+        button.carousel-navigation-button.carousel-control-prev#carousel-left-nav-btn(type="button" data-bs-target="#carouselExampleIndicators",data-bs-slide="prev")
+          span.carousel-control-prev-icon(aria-hidden="true")
+          span.visually-hidden Previous
+      .next-carousel-btn-container
+        button.carousel-navigation-button.carousel-control-next#carousel-right-nav-btn(type="button",data-bs-target="#carouselExampleIndicators",data-bs-slide="next")
+          span.carousel-control-next-icon(aria-hidden="true")
+          span.visually-hidden Next
+  .categorie-items
+    ul
+      li
+        a(href="#") T.shirt
+      li
+        a(href="#") Shirt
+      li
+        a(href="#") Trousers
+      li
+        a(href="#") Watch
+      li
+        a(href="#") Shoes
+      li
+        a(href="#") Accessories
+//- //- // <----------------------------- End carousel banner ---------------------------
+//- //- // <----------------------------- Start offer section ---------------------------
+section.offer-section
+  .offer-container
+    .offer-container-heading
+      h2 70% Offer On Brands
+      button
+        a(href="#") View More
+    .offer-and-navigation-section
+      .left-nav-btns#left-nav-btn
+        button
+          img(src="images/move left nav btn.svg", alt="")
+      .offer-section-cards
+        //- // {/* card 1 */}
+        a(href="product")
+          .cards#card1
+                img.card-img-top(src="images/men image 1.png", alt="...")
+                ul
+                  li
+                    a(href="product") U.S Polo T-Shirt White
+                h4
+                  | &#x20B9;1099
+                  span .00
+                h6
+                  | M.R.P: &#x20B9;
+                  span 569.00
+                h5 FREE DELIVERY
+        //- // {/* card 2 */}
+        .cards#card2
+          img.card-img-top(src="images/men image 2.jpg", alt="...")
+          ul
+            li
+              a(href="#") U.S Polo T-Shirt White
+          h4
+            | &#x20B9;1099
+            span .00
+          h6
+            | M.R.P: &#x20B9;
+            span 569.00
+          h5 FREE DELIVERY
+        //- // {/* card 3 */}
+        .cards#card3
+          img.card-img-top(src="images/men image 3.jpg", alt="...")
+          ul
+            li
+              a(href="#") U.S Polo T-Shirt White
+          h4
+            | &#x20B9;1099
+            span .00
+          h6
+            | M.R.P: &#x20B9;
+            span 569.00
+          h5 FREE DELIVERY
+        //- // {/* card 4 */}
+        .cards#card4
+          img.card-img-top(src="images/men image 4.jpg", alt="...")
+          ul
+            li
+              a(href="#") U.S Polo T-Shirt White
+          h4
+            | &#x20B9;1099
+            span .00
+          h6
+            | M.R.P: &#x20B9;
+            span 569.00
+          h5 FREE DELIVERY
+        //- // {/* card 5 */}
+        .cards#card5
+          img.card-img-top(src="images/men image 5.jpg", alt="...")
+          ul
+            li
+              a(href="#") U.S Polo T-Shirt White
+          h4
+            | &#x20B9;1099
+            span .00
+          h6
+            | M.R.P: &#x20B9;
+            span 569.00
+          h5 FREE DELIVERY
+        //- // {/* card 5 */}
+        .cards#card6
+          img.card-img-top(src="images/men image 1.png", alt="...")
+          ul
+            li
+              a(href="#") U.S Polo T-Shirt White
+          h4
+            | &#x20B9;1099
+            span .00
+          h6
+            | M.R.P: &#x20B9;
+            span 569.00
+          h5 FREE DELIVERY
+        .cards#card7
+          img.card-img-top(src="images/men image 1.png", alt="...")
+          ul
+            li
+              a(href="#") U.S Polo T-Shirt White
+          h4
+            | &#x20B9;1099
+            span .00
+          h6
+            | M.R.P: &#x20B9;
+            span 569.00
+          h5 FREE DELIVERY
+        .cards#card8
+          img.card-img-top(src="images/men image 1.png", alt="...")
+          ul
+            li
+              a(href="#") U.S Polo T-Shirt White
+          h4
+            | &#x20B9;1099
+            span .00
+          h6
+            | M.R.P: &#x20B9;
+            span 569.00
+          h5 FREE DELIVERY
+        .cards#card9
+          img.card-img-top(src="images/men image 1.png", alt="...")
+          ul
+            li
+              a(href="#") U.S Polo T-Shirt White
+          h4
+            | &#x20B9;1099
+            span .00
+          h6
+            | M.R.P: &#x20B9;
+            span 569.00
+          h5 FREE DELIVERY
+        .cards#card10
+          img.card-img-top(src="images/men image 1.png", alt="...")
+          ul
+            li
+              a(href="#") U.S Polo T-Shirt White
+          h4
+            | &#x20B9;1099
+            span .00
+          h6
+            | M.R.P: &#x20B9;
+            span 569.00
+          h5 FREE DELIVERY
+        .cards#card11
+          img.card-img-top(src="images/men image 1.png", alt="...")
+          ul
+            li
+              a(href="#") U.S Polo T-Shirt White
+          h4
+            | &#x20B9;1099
+            span .00
+          h6
+            | M.R.P: &#x20B9;
+            span 569.00
+          h5 FREE DELIVERY
+        .cards#card12
+          img.card-img-top(src="images/men image 1.png", alt="...")
+          ul
+            li
+              a(href="#") U.S Polo T-Shirt White
+          h4
+            | &#x20B9;1099
+            span .00
+          h6
+            | M.R.P: &#x20B9;
+            span 569.00
+          h5 FREE DELIVERY
+        .cards#card13
+          img.card-img-top(src="images/men image 1.png", alt="...")
+          ul
+            li
+              a(href="#") U.S Polo T-Shirt White
+          h4
+            | &#x20B9;1099
+            span .00
+          h6
+            | M.R.P: &#x20B9;
+            span 569.00
+          h5 FREE DELIVERY
+        .cards#card14
+          img.card-img-top(src="images/men image 1.png", alt="...")
+          ul
+            li
+              a(href="#") U.S Polo T-Shirt White
+          h4
+            | &#x20B9;1099
+            span .00
+          h6
+            | M.R.P: &#x20B9;
+            span 569.00
+          h5 FREE DELIVERY
+      .right-nav-btns#right-nav-btn
+        button
+          img(src="images/move right nav btn.svg", alt="")  
+      
+//- //- // <----------------------------- End offer section ---------------------------
+//- //- // <----------------------------- Start new trend section1 ---------------------------
+section.newTrend-section
+  .newTrend-container
+    .newTrend-header
+      h2 New Trend
+      button
+        a(href="/") View More
+    .newTrend-cards-container
+      .newTrendleft-nav-btns#newTrendleft-nav-btn
+          button
+            img(src="images/move left nav btn.svg", alt="")
+      .newTrend-card-body
+        .newTrend-cards
+          img.card-img-top(src="images/trend section men-1.jpg", alt="...")
+          ul
+            li
+              a(href="/")
+                | U.S Polo T-Shirt White
+                | XL Size
+                | XL Size
+          h4
+            | &#x20B9;1099
+            span .00
+          h6
+            | You Save:
+            span &#x20B9;540.00
+          h5
+            | Hurry
+            span 5
+            |
+            | units left
+        .newTrend-cards
+          img.card-img-top(src="images/trend section men-2.jpg", alt="...")
+          ul
+            li
+              a(href="/")
+                | U.S Polo T-Shirt White
+                | XL Size
+                | XL Size
+          h4
+            | &#x20B9;1099
+            span .00
+          h6
+            | You Save:
+            span &#x20B9;540.00
+          h5
+            | Hurry
+            span 5
+            |
+            | units left
+        .newTrend-cards
+          img.card-img-top(src="images/trend section men-3.jpg", alt="...")
+          ul
+            li
+              a(href="/")
+                | U.S Polo T-Shirt White
+                | XL Size
+                | XL Size
+          h4
+            | &#x20B9;1099
+            span .00
+          h6
+            | You Save:
+            span &#x20B9;540.00
+          h5
+            | Hurry
+            span 5
+            |
+            | units left
+        .newTrend-cards
+          img.card-img-top(src="images/trend section men-4.jpg", alt="...")
+          ul
+            li
+              a(href="/")
+                | U.S Polo T-Shirt White
+                | XL Size
+                | XL Size
+          h4
+            | &#x20B9;1099
+            span .00
+          h6
+            | You Save:
+            span &#x20B9;540.00
+          h5
+            | Hurry
+            span 5
+            |
+            | units left
+        .newTrend-cards
+          img.card-img-top(src="images/trend section men-5.jpg", alt="...")
+          ul
+            li
+              a(href="/")
+                | U.S Polo T-Shirt White
+                | XL Size
+          h4
+            | &#x20B9;1099
+            span .00
+          h6
+            | You Save:
+            span &#x20B9;540.00
+          h5
+            | Hurry
+            span 8
+            |
+            | units left
+        .newTrend-cards
+          img.card-img-top(src="images/trend section men-6.jpg", alt="...")
+          ul
+            li
+              a(href="/")
+                | U.S Polo T-Shirt White
+                | XL Size
+          h4
+            | &#x20B9;1099
+            span .00
+          h6
+            | You Save:
+            span &#x20B9;540.00
+          h5
+            | Hurry
+            span 2
+            |
+            | units left
+        .newTrend-cards
+          img.card-img-top(src="images/men image 1.png", alt="...")
+          ul
+            li
+              a(href="/")
+                | U.S Polo T-Shirt White
+                | XL Size
+          h4
+            | &#x20B9;1099
+            span .00
+          h6
+            | You Save:
+            span &#x20B9;540.00
+          h5
+            | Hurry
+            span 12
+            |
+            | units left
+        .newTrend-cards
+          img.card-img-top(src="images/men image 1.png", alt="...")
+          ul
+            li
+              a(href="/")
+                | U.S Polo T-Shirt White
+                | XL Size
+          h4
+            | &#x20B9;1099
+            span .00
+          h6
+            | You Save:
+            span &#x20B9;540.00
+          h5
+            | Hurry
+            span 12
+            |
+            | units left
+        .newTrend-cards
+          img.card-img-top(src="images/men image 1.png", alt="...")
+          ul
+            li
+              a(href="/")
+                | U.S Polo T-Shirt White
+                | XL Size
+          h4
+            | &#x20B9;1099
+            span .00
+          h6
+            | You Save:
+            span &#x20B9;540.00
+          h5
+            | Hurry
+            span 12
+            |
+            | units left
+        .newTrend-cards
+          img.card-img-top(src="images/men image 1.png", alt="...")
+          ul
+            li
+              a(href="/")
+                | U.S Polo T-Shirt White
+                | XL Size
+          h4
+            | &#x20B9;1099
+            span .00
+          h6
+            | You Save:
+            span &#x20B9;540.00
+          h5
+            | Hurry
+            span 12
+            |
+            | units left
+        .newTrend-cards
+          img.card-img-top(src="images/men image 1.png", alt="...")
+          ul
+            li
+              a(href="/")
+                | U.S Polo T-Shirt White
+                | XL Size
+          h4
+            | &#x20B9;1099
+            span .00
+          h6
+            | You Save:
+            span &#x20B9;540.00
+          h5
+            | Hurry
+            span 12
+            |
+            | units left
+        .newTrend-cards
+          img.card-img-top(src="images/men image 1.png", alt="...")
+          ul
+            li
+              a(href="/")
+                | U.S Polo T-Shirt White
+                | XL Size
+          h4
+            | &#x20B9;1099
+            span .00
+          h6
+            | You Save:
+            span &#x20B9;540.00
+          h5
+            | Hurry
+            span 12
+            |
+            | units left
+        .newTrendright-nav-btns#newTrendright-nav-btn
+          button
+            img(src="images/move right nav btn.svg", alt="")
+//- //- // <----------------------------- End new trend section1 ---------------------------
+//- //- // <-----------------------------  Start cloths with specific brands  ---------------------------
+.brandNameContainer
+  .brandName-1
+    h1 US POLO
+    .brandName-card-container-1-row-1
+      .card-bodys
+        img(src="images/brand name item cap.jpg", alt="...")
+        .card-contents
+          p Some quick
+      .card-bodys
+        img(src="images/brand name item cap.jpg", alt="...")
+        .card-contents
+          p Some quick
+      .card-bodys
+        img(src="images/brand name item cap.jpg", alt="...")
+        .card-contents
+          p Some quick
+    .brandName-card-container-1-row-2
+      .card-bodys
+        img(src="images/brand name item cap.jpg", alt="...")
+        .card-contents
+          p Some quick
+      .card-bodys
+        img(src="images/brand name item cap.jpg", alt="...")
+        .card-contents
+          p Some quick
+      .card-bodys
+        img(src="images/brand name item cap.jpg", alt="...")
+        .card-contents
+          p Some quick
+    button
+      a(href="#") View More
+  .brandName-2
+    h1 US POLO
+    .brandName-card-container-2-row-1
+      .card-bodys
+        img(src="images/brand name item cap.jpg", alt="...")
+        .card-contents
+          p Some quick
+      .card-bodys
+        img(src="images/brand name item cap.jpg", alt="...")
+        .card-contents
+          p Some quick
+      .card-bodys
+        img(src="images/brand name item cap.jpg", alt="...")
+        .card-contents
+          p Some quick
+    .brandName-card-container-2-row-2
+      .card-bodys
+        img(src="images/brand name item cap.jpg", alt="...")
+        .card-contents
+          p Some quick
+      .card-bodys
+        img(src="images/brand name item cap.jpg", alt="...")
+        .card-contents
+          p Some quick
+      .card-bodys
+        img(src="images/brand name item cap.jpg", alt="...")
+        .card-contents
+          p Some quick
+    button
+      a(href="#") View More
+//- //- // <-----------------------------  End cloths with specific brands  ---------------------------
+//- //- // <-----------------------------  Start Footer  ---------------------------
+.footer-section
+  .footer-container
+    .contact-column
+      h5 Contact
+      ul
+        li
+          a(href="#")
+            | Email:
+            span Shyammudiraj955@gmail.com
+        li
+          a(href="#")
+            | Phone:
+            span 6303594156
+        li
+          a(href="#")
+            | Landline:
+            span 040 22222222
+    .connect-with-us-column
+      h5 Connect With us
+      ul
+        li
+          a(href="#", target="_blank") Facebook
+        li
+          a(href="#", target="_blank") Instagram
+        li
+          a(href="#", target="_blank") Twitter
+    .help-column
+      h5 Help
+      ul
+        li
+          a(href="#", target="_blank") Payments
+        li
+          a(href="#", target="_blank") Shipping
+        li
+          a(href="#", target="_blank") Cancel &amp; returns
+        li
+          a(href="#", target="_blank") FAQ
+    .Policy-column
+      h5 Policy
+      ul
+        li
+          a(href="#", target="_blank") Return Policy
+        li
+          a(href="#", target="_blank") Term of use
+        li
+          a(href="#", target="_blank") Security
+        li
+          a(href="#", target="_blank") Privacy
+.main-footer-section
+  .main-footer-container
+    h6 &copy; 2021 Company, Inc. All rights reserved.
+//- <-----------------------------  End Footer  16d 8---------------------------//
+
+script(type="text/javascript", src="js/home.js")
+
+script(
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js",
+  integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13",
+  crossorigin="anonymous"
+)
+script(
+  src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js",
+  ntegrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB",
+  crossorigin="anonymous"
+)

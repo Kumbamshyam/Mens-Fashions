@@ -1,0 +1,66 @@
+meta(http-equiv='refresh' content='30')
+meta(http-equiv='refresh' content='30')
+link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css",rel="stylesheet",integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3",crossorigin="anonymous")
+link(rel="preconnect", href="https://fonts.googleapis.com")
+link(rel="preconnect", href="https://fonts.gstatic.com", crossorigin="")
+link(href="https://fonts.googleapis.com/css2?family=Roboto&display=swap", rel="stylesheet")
+
+style
+          include ../public/css/login-and-singup-folder/loginstyle.css
+          include ../public/css/main-css/style.css
+body
+include navbar
+.container.mt-3
+    .product-main-section
+        .product-small-images#products-mini-images
+                img#mini-images1.mini-image.mb-1(onmouseover="miniimagehover(this)")(src="images/product image 3.jpg", alt="")
+                img#mini-images2.mini-image.mb-1(onmouseover="miniimagehover(this)")(src="images/product image 4.jpg", alt="")
+                img#mini-images3.mini-image.mb-1(onmouseover="miniimagehover(this)")(src="images/product image 1.jpg", alt="")
+                img#mini-images4.mini-image.mb-1(onmouseover="miniimagehover(this)")(src="images/product image 2.jpg", alt="")
+                img#mini-images5.mini-image.mb-1(onmouseover="miniimagehover(this)")(src="images/product image 5.jpg", alt="")
+        .product-big-image#products-large-image
+                img.mb-1#large-image-container(Onmousemove="myfun(event)")(src="images/product image 1.jpg", alt="", width="300", height="350")
+        .product-details-section 
+                .product-title-container.mb-3
+                        p.m-0 U.S. POLO ASSN.
+                        h6 Men Regular Fit Solid Button Down Collar Casual Shirt
+                .product-price-container.mb-3 
+                        h4 ₹1,998
+                        h6 ₹2,998 
+                        h5 4.3% off
+                .product-rating-container.mb-2
+                        h6.d-inline-block
+                                span.badge.text-dark 4.1
+                                        span.rating-star.text-danger ⭐
+                        h5.d-inline-block.mx-2
+                                span.d-inline-block 175
+                                        p.d-inline-block ratings and 
+                                        span.d-inline-block 12
+                                                p.d-inline-block reviews
+                .product-colors-container.mt-2
+                        h6 Color
+                        picture 
+                                img(src="images/product image 1.jpg", alt="")
+                                img(src="images/product image 2.jpg", alt="")
+                                img(src="images/product image 3.jpg", alt="")
+                                img(src="images/product image 4.jpg", alt="")
+                                img(src="images/product image 5.jpg", alt="")
+                .product-size-container.mt-2
+                        h6 Size 
+                        .sizes 
+                                #s.d-inline-block.px-2.py-1.m-1.type-sizes S
+                                #m.d-inline-block.px-2.py-1.m-1.type-sizes M
+                                #l.d-inline-block.px-2.py-1.m-1.type-sizes L
+                                #xl.d-inline-block.px-2.py-1.m-1.type-sizes XL
+                .submit-and-addcart-button.mt-2 
+                        a.btn.btn-primary.add-to-cart(href='#' role='button') Add To Cart
+                        a.btn.btn-danger.buy-now(href='#' role='button') Buy Now
+
+
+  
+
+
+        
+script(type='text/javascript' src='js/product.js')
+
+

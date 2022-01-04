@@ -1,0 +1,152 @@
+#login-and-singup-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 400px;
+  position: relative;
+  inset: 0 0 0 0;
+  margin: 40px auto;
+  overflow: hidden;
+}
+
+#login-and-singup-main-container {
+  height: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #E7F900;
+  border-radius: 10px;
+}
+
+.login-checkbox-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login-checkbox-container label {
+  opacity: 0.7;
+}
+
+.error-images {
+  background: rgba(223, 217, 217, 0.397);
+  border-radius: 10px;
+  width: 250px;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.error-images span {
+  color: red;
+}
+
+.loding-img-container {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  background: rgba(119, 115, 115, 0.377);
+  height: 100vh;
+  width: 100vw;
+}
+
+.loding-img-container #loading {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+#login-checkbox {
+  height: 18px;
+  width: 18px;
+  margin-right: 5px;
+}
+
+.login-and-singup-container {
+  text-transform: capitalize;
+  border-radius: 5px;
+  width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  background: rgba(255, 255, 255, 0);
+}
+
+#login-form {
+  width: 288px;
+}
+
+.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#login-and-singup-container-1 {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#login-and-singup-container-2 {
+  position: absolute;
+  left: 455px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#logins-singup-btn {
+  margin: 20px 0 0 129px;
+  letter-spacing: 1px;
+}
+
+#signups-login-btn {
+  margin: 20px 0 0 146px;
+  letter-spacing: 1px;
+}
+
+#new-user-submit-btn {
+  margin: 20px 0 0 0;
+}
+
+#login-submit-btn {
+  margin: 20px 0 0 0;
+}
+/*# sourceMappingURL=loginstyle.css.map */
